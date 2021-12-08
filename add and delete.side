@@ -1,0 +1,126 @@
+{
+  "id": "2b1946a1-a98a-4d9f-8b33-dc93f8a1abee",
+  "version": "2.0",
+  "name": "add",
+  "url": "https://the-internet.herokuapp.com",
+  "tests": [{
+    "id": "3470c464-054d-4a6c-84a9-db1de6bfd858",
+    "name": "add",
+    "commands": [{
+      "id": "0b7f1bcc-1771-4844-aea4-9b4c115d8c2f",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b666567c-f056-4f7b-b2ec-4f846e20bb1d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1366x720",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0c662307-14aa-4445-8ab2-b14c5112dcce",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Add/Remove Elements",
+      "targets": [
+        ["linkText=Add/Remove Elements", "linkText"],
+        ["css=li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Add/Remove Elements')]", "xpath:link"],
+        ["xpath=//div[@id='content']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/add_remove_elements/')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Add/Remove Elements')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "44fcbde5-cb15-48a0-99f0-756a824532b1",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@onclick='addElement()']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add Element')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3150fb72-8944-444f-9955-2da88f972be5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.example > button",
+      "targets": [
+        ["css=.example > button", "css:finder"],
+        ["xpath=//button[@onclick='addElement()']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add Element')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c5069c08-4e5f-4d8e-997a-45eed3a3bc6b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.example > button",
+      "targets": [
+        ["css=.example > button", "css:finder"],
+        ["xpath=//button[@onclick='addElement()']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add Element')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "340413e0-5976-4883-b7a1-d4a9a198f2f5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.added-manually:nth-child(3)",
+      "targets": [
+        ["css=.added-manually:nth-child(3)", "css:finder"],
+        ["xpath=(//button[@onclick='deleteElement()'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='elements']/button[3]", "xpath:idRelative"],
+        ["xpath=//button[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3d6b678d-d0a3-4c2d-8e14-73e844c73c02",
+      "comment": "",
+      "command": "click",
+      "target": "css=.added-manually:nth-child(2)",
+      "targets": [
+        ["css=.added-manually:nth-child(2)", "css:finder"],
+        ["xpath=(//button[@onclick='deleteElement()'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='elements']/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "26e14c11-5926-4362-89f2-fbeffdd72d9e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.added-manually",
+      "targets": [
+        ["css=.added-manually", "css:finder"],
+        ["xpath=//button[@onclick='deleteElement()']", "xpath:attributes"],
+        ["xpath=//div[@id='elements']/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Delete')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "e767e812-09bc-4f99-95f1-475da7de8ad5",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["3470c464-054d-4a6c-84a9-db1de6bfd858"]
+  }],
+  "urls": ["https://the-internet.herokuapp.com/"],
+  "plugins": []
+}

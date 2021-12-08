@@ -1,0 +1,108 @@
+{
+  "id": "da17c6f3-4c45-43ca-a4ac-0810f0f2916e",
+  "version": "2.0",
+  "name": "login",
+  "url": "https://giasudatviet.com",
+  "tests": [{
+    "id": "51b58f87-4751-4d21-8c46-eb322143be3c",
+    "name": "success",
+    "commands": [{
+      "id": "9e1d9ece-27c2-40e1-8deb-b78424dee953",
+      "comment": "",
+      "command": "open",
+      "target": "/tai-khoan.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "52314a6a-154b-48a6-9914-8414d564bcaf",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1366x720",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7f7ff8e8-295d-4642-9b29-beed3339d396",
+      "comment": "",
+      "command": "click",
+      "target": "id=login__phone",
+      "targets": [
+        ["id=login__phone", "id"],
+        ["name=login__phone", "name"],
+        ["css=#login__phone", "css:finder"],
+        ["xpath=//input[@id='login__phone']", "xpath:attributes"],
+        ["xpath=//form[@id='form__login']/input", "xpath:idRelative"],
+        ["xpath=//li/form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d68e3d70-0167-424f-b66b-c6984b0ea5b4",
+      "comment": "",
+      "command": "type",
+      "target": "id=login__phone",
+      "targets": [
+        ["id=login__phone", "id"],
+        ["name=login__phone", "name"],
+        ["css=#login__phone", "css:finder"],
+        ["xpath=//input[@id='login__phone']", "xpath:attributes"],
+        ["xpath=//form[@id='form__login']/input", "xpath:idRelative"],
+        ["xpath=//li/form/input", "xpath:position"]
+      ],
+      "value": "0356810427"
+    }, {
+      "id": "9d973df4-9ff3-4657-826c-35e590ca89d1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn_s3:nth-child(2)",
+      "targets": [
+        ["css=.btn_s3:nth-child(2)", "css:finder"],
+        ["xpath=(//input[@id=''])[6]", "xpath:attributes"],
+        ["xpath=//form[@id='form__login']/input[2]", "xpath:idRelative"],
+        ["xpath=//form/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0abe7a73-471f-4d64-808e-8295efadd157",
+      "comment": "",
+      "command": "click",
+      "target": "css=.lead",
+      "targets": [
+        ["css=.lead", "css:finder"],
+        ["xpath=//body/div[4]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Chào mừng Đỗ Tín đến với Trung Tâm Gia Sư Đất Việt')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d91ed75f-46e6-43f4-ad7c-b2c1839890c5",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.lead",
+      "targets": [
+        ["css=.lead", "css:finder"],
+        ["xpath=//body/div[4]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Chào mừng Đỗ Tín đến với Trung Tâm Gia Sư Đất Việt')]", "xpath:innerText"]
+      ],
+      "value": "Chào mừng Đỗ Tín đến với Trung Tâm Gia Sư Đất Việt"
+    }, {
+      "id": "5e4cc02e-c000-4792-985c-9c8bec05d0c9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.confirm",
+      "targets": [
+        ["css=.confirm", "css:finder"],
+        ["xpath=//div[7]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'OK')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "6df1524a-ed24-4d1b-a347-1ae11946c9da",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["51b58f87-4751-4d21-8c46-eb322143be3c"]
+  }],
+  "urls": ["https://giasudatviet.com/"],
+  "plugins": []
+}
